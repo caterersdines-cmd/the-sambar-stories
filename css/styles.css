@@ -1,0 +1,80 @@
+:root {
+  --cafe-green: #388E3C;
+  --cafe-yellow: #FBC02D;
+  --cafe-red: #D32F2F;
+}
+
+/* Fixed navbar space */
+body {
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* Background logo for whole website */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/logo.jpg") no-repeat center center;
+  background-size: 500px;
+  opacity: 0.1;   /* faint logo */
+  z-index: -1;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../assets/hero-bg.jpg") center/cover no-repeat;
+  padding: 120px 0;
+}
+
+/* Food Images */
+.food-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.food-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Menu Section transparent background */
+.menu-section {
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Navbar colors */
+.navbar {
+  background-color: var(--cafe-green) !important;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: var(--cafe-yellow);
+  border: none;
+  color: #000;
+}
+.btn-warning:hover {
+  background-color: var(--cafe-red);
+  color: #fff;
+}
+.cafe-brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* glow effect */
+}
+
+.cafe-brand img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
