@@ -78,3 +78,35 @@ body::before {
   border-radius: 50%;
   border: 2px solid #fff;
 }
+
+/* Default (desktop) */
+.cafe-brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .cafe-brand span {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .cafe-brand span {
+    font-size: 1.1rem;
+  }
+}
+
+.cafe-brand {
+  flex-wrap: wrap;
+}
+
+.cafe-brand span {
+  white-space: normal;
+}
